@@ -20,7 +20,7 @@ export declare class WebsocketGateway implements OnGatewayConnection, OnGatewayD
     handleGetStatus(client: Socket): void;
     broadcastError(error: string, details?: any): void;
     getConnectionStats(): {
-        totalConnections: number;
-        clients: string[];
+        totalConnections: any;
+        clients: any;
     };
 }

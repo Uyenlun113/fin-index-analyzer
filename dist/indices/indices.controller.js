@@ -12,6 +12,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
 var IndicesController_1;
+var _a, _b;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.IndicesController = void 0;
 const common_1 = require("@nestjs/common");
@@ -118,7 +119,7 @@ __decorate([
     }),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Promise)
+    __metadata("design:returntype", typeof (_a = typeof Promise !== "undefined" && Promise) === "function" ? _a : Object)
 ], IndicesController.prototype, "getAllIndices", null);
 __decorate([
     (0, common_1.Get)(':symbol'),
@@ -134,7 +135,7 @@ __decorate([
     __param(0, (0, common_1.Param)('symbol')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),
-    __metadata("design:returntype", Promise)
+    __metadata("design:returntype", typeof (_b = typeof Promise !== "undefined" && Promise) === "function" ? _b : Object)
 ], IndicesController.prototype, "getIndexBySymbol", null);
 exports.IndicesController = IndicesController = IndicesController_1 = __decorate([
     (0, swagger_1.ApiTags)('indices'),

@@ -12,7 +12,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
 var CrawlerService_1;
-var _a;
+var _a, _b;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CrawlerService = void 0;
 const common_1 = require("@nestjs/common");
@@ -189,7 +189,7 @@ __decorate([
     (0, schedule_1.Cron)('0 */5 * * * *'),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Promise)
+    __metadata("design:returntype", typeof (_b = typeof Promise !== "undefined" && Promise) === "function" ? _b : Object)
 ], CrawlerService.prototype, "scheduledCrawl", null);
 exports.CrawlerService = CrawlerService = CrawlerService_1 = __decorate([
     (0, common_1.Injectable)(),

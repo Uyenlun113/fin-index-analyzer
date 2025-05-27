@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.IndexSchema = exports.MarketIndex = void 0;
 const mongoose_1 = require("@nestjs/mongoose");
@@ -57,7 +58,7 @@ __decorate([
 ], MarketIndex.prototype, "volume", void 0);
 __decorate([
     (0, mongoose_1.Prop)({ default: Date.now, index: true }),
-    __metadata("design:type", Date)
+    __metadata("design:type", typeof (_a = typeof Date !== "undefined" && Date) === "function" ? _a : Object)
 ], MarketIndex.prototype, "timestamp", void 0);
 exports.MarketIndex = MarketIndex = __decorate([
     (0, mongoose_1.Schema)({

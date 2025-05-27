@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AnalysisResultDto = void 0;
 const swagger_1 = require("@nestjs/swagger");
@@ -86,6 +87,6 @@ __decorate([
         example: '2024-01-15T10:30:00Z',
         type: Date,
     }),
-    __metadata("design:type", Date)
+    __metadata("design:type", typeof (_a = typeof Date !== "undefined" && Date) === "function" ? _a : Object)
 ], AnalysisResultDto.prototype, "timestamp", void 0);
 //# sourceMappingURL=analysis.dto.js.map
